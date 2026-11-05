@@ -1,3 +1,5 @@
+# IMPORT PACKAGES IN THIS CELL
+
 import os
 import openpyxl
 import pandas as pd
@@ -183,5 +185,5 @@ for i, file in enumerate(filenames):
         order_data, name, email, date = get_order_data(invoice_num,file, directory)
         count = count+1
         create_invoice(invoice_num, order_data, directory)
-        send_email (invoice_num, name, 'henryfh@byu.edu', date, directory)
+        send_email (invoice_num, name, email, date, directory)
 
