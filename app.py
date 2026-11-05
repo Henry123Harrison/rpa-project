@@ -117,9 +117,6 @@ def create_invoice(invoice_num, order_data, directory):
 
 # INSERT ANSWER FOR QUESTION 5 HERE
 
-# import smtplib
-# import mimetypes
-# from email.message import EmailMessage
 
 gmail_password_path = select_file('Please select the gmail password file')
 gmail_password = open(gmail_password_path).read()
