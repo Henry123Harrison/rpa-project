@@ -38,6 +38,7 @@ while True:
 
 
 # INSERT ANSWER FOR QUESTION 2 HERE
+
 product_descriptions = {}
 product_prices = {}
 
@@ -105,16 +106,11 @@ def get_order_data(invoice_num, filename, directory):
 
     return (dictionary, name, email, date)
 
-# dictionary, name, email, date  = get_order_data(8515,'Order1.xlsx', directory)
-# print(dictionary, name, email, date)
-
-
 # INSERT ANSWER FOR QUESTION 4 HERE
 
 def create_invoice(invoice_num, order_data, directory):
     create_pdf(directory+'MasterInvoice.pdf', directory+f'Invoice{invoice_num}.pdf', order_data)
 
-# create_invoice(8515,dictionary, directory)
 
 
 # INSERT ANSWER FOR QUESTION 5 HERE
@@ -173,8 +169,6 @@ Email: sales@pythontechco.com"""
 
     mail_server.send_message(message)
     mail_server.quit()
-
-# send_email(8515, name, 'henryfh@byu.edu', date, directory)
 
 # INSERT ANSWER FOR QUESTION 6 HERE
 count = 0
