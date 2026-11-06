@@ -186,4 +186,3 @@ for i, file in enumerate(filenames):
         count = count+1
         create_invoice(invoice_num, order_data, directory)
         send_email (invoice_num, name, email, date, directory)
-
